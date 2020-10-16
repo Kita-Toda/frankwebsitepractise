@@ -85,7 +85,8 @@
         padding: 40px;
       }
 
-      h2, form {
+      h2,
+      form {
         text-align: center;
       }
 
@@ -116,7 +117,9 @@
         margin-right: 15%;
       }
 
-      .nav1, .nav2, .contact {
+      .nav1,
+      .nav2,
+      .contact {
         margin-top: 5%;
       }
 
@@ -132,6 +135,51 @@
         padding: 10px;
       }
 
+      @media screen and (max-width: 767px) {
+
+        #main_banner_container {
+          display: block;
+          position: relative;
+          padding-bottom: 100%;
+        }
+
+        #main_banner {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .wrapper {
+          flex-direction: column;
+        }
+
+        .banner1 {
+          width: 100%;
+        }
+
+        .banner2 {
+          margin-top: 30px;
+          width: 100%;
+        }
+
+        .wrapper2 {
+          flex-direction: column;
+        }
+
+        .banner3, .banner4, .banner5 {
+          margin-top: 30px;
+          width: 100%;
+        }
+      /*
+        #text, #submit {
+
+        }
+      */
+
+      }
     </style>
   </head>
 
@@ -141,8 +189,8 @@
     </header>
 
     <main>
-      <a href="https://www.pornhub.com/">
-        <img id="" src="https://picsum.photos/800/350" alt="picture">
+      <a id="main_banner_container" href="https://www.pornhub.com/">
+        <img id="main_banner" src="https://picsum.photos/800/350" alt="picture">
       </a>
 
       <div class="wrapper">
@@ -192,8 +240,8 @@
         </h2>
         <form>
           <span class="email">Email</span>
-          <input type="text" >
-          <input type="submit">
+          <input id="text" type="text">
+          <input id="submit" type="submit">
         </form>
 
       </div>
@@ -204,34 +252,34 @@
     <footer>
       <div class="group">
         <div class="nav1">
-        <h2>Navigation</h2>
-        <a href="www.google.com">Helloworld</a>
-        <a href="www.google.com">Helloworld</a>
-        <a href="www.google.com">Helloworld</a>
-      </div>
-      <div class="nav2">
-        <h2>Navigation</h2>
-        <a href="www.google.com">Helloworld</a>
-        <a href="www.google.com">Helloworld</a>
-        <a href="www.google.com">Helloworld</a>
-      </div>
-      <div class="contact">
+          <h2>Navigation</h2>
+          <a href="www.google.com">Helloworld</a>
+          <a href="www.google.com">Helloworld</a>
+          <a href="www.google.com">Helloworld</a>
+        </div>
+        <div class="nav2">
+          <h2>Navigation</h2>
+          <a href="www.google.com">Helloworld</a>
+          <a href="www.google.com">Helloworld</a>
+          <a href="www.google.com">Helloworld</a>
+        </div>
+        <div class="contact">
 
-        <form action="type">
+          <form action="type">
 
-          <label for="fname">Contact:</label><br>
-          <input type="text" class="fname"><br>
-          <label for="lname">Message:</label><br>
-          <input type="text" class="lname"><br>
-          <input type="submit">
-        </form>
+            <label for="fname">Contact:</label><br>
+            <input type="text" class="fname"><br>
+            <label for="lname">Message:</label><br>
+            <input type="text" class="lname"><br>
+            <input type="submit">
+          </form>
 
+        </div>
       </div>
-    </div>
     </footer>
-<div class="copyright">
-  copyright infringement from Frank Altamirano
-</div>
+    <div class="copyright">
+      copyright infringement from Frank Altamirano
+    </div>
 
 
   </body>
